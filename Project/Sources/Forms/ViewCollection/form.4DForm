@@ -1,0 +1,73 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 40,
+					"left": 30,
+					"width": 425,
+					"height": 521,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"headerHeight": "41px",
+					"dataSource": "Form:C1466.list",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"events": [],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"metaSource": "colorHighAge2",
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.value",
+							"width": 350,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Persons"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"windowMinWidth": 450,
+	"windowMinHeight": 500,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"rightMargin": 19,
+	"bottomMargin": 20
+}

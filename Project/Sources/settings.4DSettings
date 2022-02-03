@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="21">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<web>
+			<standalone_server>
+				<configuration port_number="8043" publish_at_startup="true"/>
+				<rest launch_at_startup="true"/>
+				<log format="0" tokens=""/>
+			</standalone_server>
+		</web>
+		<general startup_environnement="0"/>
+		<interface>
+			<user splash_screen="false"/>
+		</interface>
+		<server>
+			<network>
+				<options publication_name="ORDARequestsAndCache"/>
+			</network>
+		</server>
+	</com.4d>
+</preferences>

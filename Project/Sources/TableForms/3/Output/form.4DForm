@@ -1,0 +1,471 @@
+﻿{
+	"destination": "listScreen",
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 26,
+	"markerBody": 49,
+	"markerBreak": 54,
+	"markerFooter": 54,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle16": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 995,
+					"height": 51,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 2,
+					"left": 2,
+					"width": 991,
+					"height": 24,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture8.png"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 15,
+					"width": 64,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "ID : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 91,
+					"width": 56,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "age : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 159,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "lastname : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 451,
+					"width": 61,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "gender : "
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 524,
+					"width": 93,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "children : "
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 629,
+					"width": 66,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "addressID : "
+				},
+				"S7_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 707,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "firstname : "
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 26,
+					"left": 2,
+					"width": 991,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 15,
+					"width": 64,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]ID:1",
+					"dataSourceTypeHint": "integer",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 91,
+					"width": 56,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]age:2",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 159,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]lastname:3",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 524,
+					"width": 93,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]numberOfKids:5",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 629,
+					"width": 66,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]addressID:6",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 707,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]firstname:7",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line10": {
+					"type": "line",
+					"top": 2,
+					"left": 701,
+					"height": 49,
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 0,
+					"left": 700,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line11": {
+					"type": "line",
+					"top": 2,
+					"left": 623,
+					"height": 49,
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 0,
+					"left": 622,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": 2,
+					"left": 518,
+					"height": 49,
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": 0,
+					"left": 517,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line13": {
+					"type": "line",
+					"top": 2,
+					"left": 445,
+					"height": 49,
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Splitter5": {
+					"type": "button",
+					"top": 0,
+					"left": 444,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line14": {
+					"type": "line",
+					"top": 2,
+					"left": 153,
+					"height": 49,
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Splitter6": {
+					"type": "button",
+					"top": 0,
+					"left": 152,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line15": {
+					"type": "line",
+					"top": 2,
+					"left": 85,
+					"height": 49,
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Splitter7": {
+					"type": "button",
+					"top": 0,
+					"left": 84,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S2_Field1": {
+					"type": "input",
+					"top": 30,
+					"left": 91,
+					"width": 56,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]age:2",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field2": {
+					"type": "input",
+					"top": 30,
+					"left": 451,
+					"width": 56,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Persons:3]gender:4",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

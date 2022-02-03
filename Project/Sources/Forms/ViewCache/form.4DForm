@@ -1,0 +1,459 @@
+﻿{
+	"destination": "detailScreen",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box3": {
+					"type": "listbox",
+					"top": 40,
+					"left": 40,
+					"width": 800,
+					"height": 400,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.cacheInfo",
+					"metaSource": "computeBold ",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/List Box3.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					],
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"columns": [
+						{
+							"name": "col0_4",
+							"dataSource": "This:C1470.col0.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header35",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer35",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col1_4",
+							"dataSource": "This:C1470.col1.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header42",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer42",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col2_4",
+							"dataSource": "This:C1470.col2.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header46",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer46",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col3_4",
+							"dataSource": "This:C1470.col3.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header47",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer47",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col4_4",
+							"dataSource": "This:C1470.col4.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header48",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer48",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col5_4",
+							"dataSource": "This:C1470.col5.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header49",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer49",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col6_4",
+							"dataSource": "This:C1470.col6.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header50",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer50",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col7_4",
+							"dataSource": "This:C1470.col7.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header51",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer51",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col8_4",
+							"dataSource": "This:C1470.col8.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header52",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer52",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col9_4",
+							"dataSource": "This:C1470.col9.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header62",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer62",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col10_4",
+							"dataSource": "This:C1470.col10.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header60",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer60",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col11_4",
+							"dataSource": "This:C1470.col11.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header63",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer63",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col12_4",
+							"dataSource": "This:C1470.col12.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header64",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer64",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col13_4",
+							"dataSource": "This:C1470.col13.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header65",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer65",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col14_4",
+							"dataSource": "This:C1470.col14.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header76",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer76",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col15_4",
+							"dataSource": "This:C1470.col15.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header89",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer89",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col16_4",
+							"dataSource": "This:C1470.col16.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header90",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer90",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col17_4",
+							"dataSource": "This:C1470.col17.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header92",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer92",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col18_4",
+							"dataSource": "This:C1470.col18.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header91",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer91",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col19_4",
+							"dataSource": "This:C1470.col19.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header53",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer53",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Text41": {
+					"type": "text",
+					"top": 10,
+					"left": 40,
+					"width": 500,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "ORDA cache content (Persons dataclass)",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingY": "fixed"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 500,
+					"left": 40,
+					"width": 800,
+					"height": 300,
+					"dataSource": "Form:C1466.hover",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text44": {
+					"type": "text",
+					"top": 450,
+					"left": 40,
+					"width": 800,
+					"height": 40,
+					"fontStyle": "italic",
+					"text": "This grid shows the primary keys of the entities in the ORDA cache - Hover on the cells to view the content",
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingX": "fixed"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowMinHeight": 500,
+	"windowMaxHeight": 32767,
+	"windowMinWidth": 930,
+	"width": 850,
+	"height": 820
+}

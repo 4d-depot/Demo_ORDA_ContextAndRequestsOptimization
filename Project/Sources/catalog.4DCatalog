@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Demo_Summit2020_ORDA_ContextAndRequestsOptimization" uuid="DEEA6026A5456E4C816E812D170EAF16" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="INFOS" uuid="40D88E98EF3C412EBE6FC3ED74373332" id="2">
+		<field name="ID" uuid="8DFF216099834E518D39E43CBEE93B69" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="pageNumber" uuid="1412468B62F94E6EBAB57CF3AC945F35" type="3" never_null="true" id="2"/>
+		<field name="TabTitle" uuid="98386F13E5D04516B2DA6B09F8BAFBB9" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Description" uuid="73DF0FD022C44B9BB2F52B59CC6D3045" type="10" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="8DFF216099834E518D39E43CBEE93B69"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Persons" uuid="2DC02D1D67D047FF89D989618BF37002" id="3">
+		<field name="ID" uuid="A4ACD7004DE747C48964DE4060C6025E" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="age" uuid="287FD19B301C4EF1828052F3072CE84F" type="3" never_null="true" id="2">
+			<field_extra position="4"/>
+		</field>
+		<field name="lastname" uuid="10934BDDF3CE4D4F86C11DBF45C2A13F" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="gender" uuid="E228D0D087CF4198BF57397C2E855787" type="10" never_null="true" id="4">
+			<field_extra position="5"/>
+		</field>
+		<field name="children" uuid="55E3091B414C4F8E8E10DB99215913CD" type="3" never_null="true" id="5">
+			<field_extra position="6"/>
+		</field>
+		<field name="addressID" uuid="7C033B9825874801AA8FAD5DA750A20F" type="4" never_null="true" id="6">
+			<field_extra position="7"/>
+		</field>
+		<field name="firstname" uuid="3B9274C10E024F1BAF453022012ECB5B" type="10" limiting_length="255" never_null="true" id="7">
+			<field_extra position="2"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="A4ACD7004DE747C48964DE4060C6025E"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="351.16015625" top="12.71875" width="154.5234375" height="195.390625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Address" uuid="7A8B26793E944265B5D228CC41803640" id="4">
+		<field name="ID" uuid="DCAD3D26ADAC4CEC9BC3C695F1EDDA1D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="zipCode" uuid="1E43236BF7B0476DB5CCE0FB4FF98D6B" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="city" uuid="0C7217F0C45348189922EC8757C2E506" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="DCAD3D26ADAC4CEC9BC3C695F1EDDA1D"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="585.36328125" top="34.5" width="114.93359375" height="125.390625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="70BB5DE58A634AB683369A5E03BAE508" name_Nto1="address" name_1toN="persons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="7C033B9825874801AA8FAD5DA750A20F" name="addressID">
+				<table_ref uuid="2DC02D1D67D047FF89D989618BF37002" name="Persons"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="DCAD3D26ADAC4CEC9BC3C695F1EDDA1D" name="ID">
+				<table_ref uuid="7A8B26793E944265B5D228CC41803640" name="Address"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="749EC88B42044917A8AC11FB56B83933" type="7">
+		<field_ref uuid="DCAD3D26ADAC4CEC9BC3C695F1EDDA1D" name="ID">
+			<table_ref uuid="7A8B26793E944265B5D228CC41803640" name="Address"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C27120D7BE844F9BAE933ED4A2B48DDC" type="7">
+		<field_ref uuid="8DFF216099834E518D39E43CBEE93B69" name="ID">
+			<table_ref uuid="40D88E98EF3C412EBE6FC3ED74373332" name="INFOS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FCABBA64297442F8BA12F21311E662FD" type="7">
+		<field_ref uuid="A4ACD7004DE747C48964DE4060C6025E" name="ID">
+			<table_ref uuid="2DC02D1D67D047FF89D989618BF37002" name="Persons"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" data_file_path=":ORDARequestsAndCache.4DD" package_name="ORDARequestsAndCache" structure_file_name="ORDARequestsAndCache">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

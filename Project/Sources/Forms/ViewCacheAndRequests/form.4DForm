@@ -1,0 +1,399 @@
+﻿{
+	"destination": "detailScreen",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box3": {
+					"type": "listbox",
+					"top": 40,
+					"left": 40,
+					"width": 120,
+					"height": 40,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.cacheInfoPersons",
+					"metaSource": "colorAsExpired (\"_2\")",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/List Box3.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					],
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 16,
+					"columns": [
+						{
+							"name": "col0_2",
+							"dataSource": "This:C1470.col0.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header35",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer35",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col1_2",
+							"dataSource": "This:C1470.col1.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header42",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer42",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col2_2",
+							"dataSource": "This:C1470.col2.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header46",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer46",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Text41": {
+					"type": "text",
+					"top": 10,
+					"left": 40,
+					"width": 500,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "ORDA cache content (Persons dataclass)",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingY": "fixed"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 40,
+					"left": 560,
+					"width": 380,
+					"height": 450,
+					"dataSource": "Form:C1466.hover",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 40,
+					"left": 420,
+					"width": 120,
+					"height": 40,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.cacheInfoAddress",
+					"metaSource": "colorAsExpired (\"_3\")",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					],
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 16,
+					"columns": [
+						{
+							"name": "col0_3",
+							"dataSource": "This:C1470.col0.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header1",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col1_3",
+							"dataSource": "This:C1470.col1.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header2",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col2_3",
+							"dataSource": "This:C1470.col2.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header3",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 420,
+					"width": 400,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "ORDA cache content (Address dataclass)",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingY": "fixed"
+				},
+				"LBRequests6": {
+					"type": "listbox",
+					"top": 200,
+					"left": 40,
+					"width": 455,
+					"height": 201,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"headerHeight": "41px",
+					"dataSource": "Form:C1466.log",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.selected",
+					"verticalAlign": "top",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [],
+							"header": {
+								"name": "Header4",
+								"text": "#"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss"
+							},
+							"textAlign": "center"
+						},
+						{
+							"name": "Column22",
+							"dataSource": "This:C1470.url",
+							"width": 400,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [],
+							"header": {
+								"name": "Header66",
+								"text": "Request"
+							},
+							"footer": {
+								"name": "Footer66",
+								"timeFormat": "hh_mm_ss"
+							},
+							"rowHeightAuto": false,
+							"wordwrap": "normal"
+						}
+					]
+				},
+				"Text43": {
+					"type": "text",
+					"top": 170,
+					"left": 40,
+					"width": 300,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "Requests sent to the server",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text2": {
+					"type": "text",
+					"top": 410,
+					"left": 40,
+					"width": 200,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "Response",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Input": {
+					"type": "input",
+					"left": 40,
+					"top": 440,
+					"width": 449,
+					"height": 300,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"dataSource": "Form:C1466.selected.response",
+					"focusable": false,
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "visible"
+				},
+				"Sample5": {
+					"type": "input",
+					"top": 90,
+					"left": 40,
+					"width": 40,
+					"height": 30,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text8": {
+					"type": "text",
+					"top": 90,
+					"left": 90,
+					"width": 150,
+					"height": 20,
+					"text": "Cache is expired",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheTimeout": {
+					"type": "input",
+					"top": 130,
+					"left": 40,
+					"width": 350,
+					"height": 20,
+					"dataSource": "_TabLineCode{24}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowMinHeight": 600,
+	"windowMaxHeight": 32767,
+	"windowMinWidth": 930,
+	"width": 950,
+	"height": 750
+}

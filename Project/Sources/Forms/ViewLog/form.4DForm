@@ -1,0 +1,168 @@
+﻿{
+	"destination": "detailScreen",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"LBRequests5": {
+					"type": "listbox",
+					"top": 80,
+					"left": 20,
+					"width": 1195,
+					"height": 291,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "50px",
+					"headerHeight": "41px",
+					"dataSource": "Form:C1466.log",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.selected",
+					"verticalAlign": "top",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					],
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [],
+							"header": {
+								"name": "Header3",
+								"text": "#"
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss"
+							},
+							"textAlign": "center"
+						},
+						{
+							"name": "Column22",
+							"dataSource": "This:C1470.url",
+							"width": 1000,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [],
+							"header": {
+								"name": "Header66",
+								"text": "Request"
+							},
+							"footer": {
+								"name": "Footer66",
+								"timeFormat": "hh_mm_ss"
+							},
+							"rowHeightAuto": false,
+							"wordwrap": "normal"
+						}
+					]
+				},
+				"Text43": {
+					"type": "text",
+					"top": 50,
+					"left": 20,
+					"width": 300,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "Requests sent to the server",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text1": {
+					"type": "text",
+					"top": 400,
+					"left": 20,
+					"width": 200,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "Response",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ClearLog": {
+					"type": "button",
+					"top": 20,
+					"left": 1095,
+					"width": 100,
+					"height": 40,
+					"text": "Clear log",
+					"focusable": false,
+					"method": "ObjectMethods/ClearLog.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Input": {
+					"type": "input",
+					"left": 140,
+					"top": 400,
+					"width": 800,
+					"height": 330,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"dataSource": "Form:C1466.selected.response",
+					"focusable": false,
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "visible"
+				},
+				"ClearLog1": {
+					"type": "button",
+					"top": 20,
+					"left": 900,
+					"width": 170,
+					"height": 40,
+					"text": "Refresh log",
+					"focusable": false,
+					"method": "ObjectMethods/RefreshLog.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowMinWidth": 930,
+	"windowMinHeight": 500,
+	"width": 1234,
+	"height": 750
+}

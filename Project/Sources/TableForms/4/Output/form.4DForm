@@ -1,0 +1,218 @@
+﻿{
+	"destination": "listScreen",
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 26,
+	"markerBody": 49,
+	"markerBreak": 54,
+	"markerFooter": 54,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 455,
+					"height": 51,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 2,
+					"left": 2,
+					"width": 451,
+					"height": 24,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture4.png"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 15,
+					"width": 64,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "ID : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 91,
+					"width": 64,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "zipCode : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 7,
+					"left": 167,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "city : "
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 26,
+					"left": 2,
+					"width": 451,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 15,
+					"width": 64,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Address:4]ID:1",
+					"dataSourceTypeHint": "integer",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 91,
+					"width": 64,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Address:4]zipCode:2",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 30,
+					"left": 167,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Address:4]city:3",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line6": {
+					"type": "line",
+					"top": 2,
+					"left": 161,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 0,
+					"left": 160,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line7": {
+					"type": "line",
+					"top": 2,
+					"left": 85,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 0,
+					"left": 84,
+					"width": 3,
+					"height": 53,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

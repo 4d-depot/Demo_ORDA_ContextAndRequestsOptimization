@@ -1,0 +1,743 @@
+﻿{
+	"destination": "detailScreen",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CacheTimeout": {
+					"type": "input",
+					"top": 30,
+					"left": 180,
+					"width": 500,
+					"height": 20,
+					"dataSource": "_TabLineCode{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 10,
+					"left": 690,
+					"width": 150,
+					"height": 40,
+					"text": "Clear cache",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal",
+					"style": "flat"
+				},
+				"List Box2": {
+					"type": "listbox",
+					"top": 60,
+					"left": 40,
+					"width": 800,
+					"height": 400,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.cacheInfo",
+					"metaSource": "computeColor ",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/List Box2.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseMove"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal",
+					"columns": [
+						{
+							"name": "col0",
+							"dataSource": "This:C1470.col0.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header13",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer13",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col1",
+							"dataSource": "This:C1470.col1.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header8",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer8",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col2",
+							"dataSource": "This:C1470.col2.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header9",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer9",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col3",
+							"dataSource": "This:C1470.col3.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header10",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer10",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col4",
+							"dataSource": "This:C1470.col4.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header11",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer11",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col5",
+							"dataSource": "This:C1470.col5.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header12",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer12",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col6",
+							"dataSource": "This:C1470.col6.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header14",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer14",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col7",
+							"dataSource": "This:C1470.col7.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header15",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer15",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col8",
+							"dataSource": "This:C1470.col8.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header16",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer16",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "col9",
+							"dataSource": "This:C1470.col9.key",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"header": {
+								"name": "Header7",
+								"text": "Header7"
+							},
+							"footer": {
+								"name": "Footer7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"header": {
+								"name": "Header1",
+								"text": "Header1"
+							},
+							"name": "col10",
+							"width": 40,
+							"dataSource": "This:C1470.col10.key",
+							"footer": {
+								"name": "Footer1"
+							}
+						},
+						{
+							"header": {
+								"name": "Header20",
+								"text": "Header20"
+							},
+							"name": "col11",
+							"width": 40,
+							"dataSource": "This:C1470.col11.key",
+							"footer": {
+								"name": "Footer20"
+							}
+						},
+						{
+							"header": {
+								"name": "Header19",
+								"text": "Header19"
+							},
+							"name": "col12",
+							"width": 40,
+							"dataSource": "This:C1470.col12.key",
+							"footer": {
+								"name": "Footer19"
+							}
+						},
+						{
+							"header": {
+								"name": "Header18",
+								"text": "Header18"
+							},
+							"name": "col13",
+							"width": 40,
+							"dataSource": "This:C1470.col13.key",
+							"footer": {
+								"name": "Footer18"
+							}
+						},
+						{
+							"header": {
+								"name": "Header17",
+								"text": "Header17"
+							},
+							"name": "col14",
+							"width": 40,
+							"dataSource": "This:C1470.col14.key",
+							"footer": {
+								"name": "Footer17"
+							}
+						},
+						{
+							"header": {
+								"name": "Header6",
+								"text": "Header6"
+							},
+							"name": "col15",
+							"width": 40,
+							"dataSource": "This:C1470.col15.key",
+							"footer": {
+								"name": "Footer6"
+							}
+						},
+						{
+							"header": {
+								"name": "Header5",
+								"text": "Header5"
+							},
+							"name": "col16",
+							"width": 40,
+							"dataSource": "This:C1470.col16.key",
+							"footer": {
+								"name": "Footer5"
+							}
+						},
+						{
+							"header": {
+								"name": "Header4",
+								"text": "Header4"
+							},
+							"name": "col17",
+							"width": 40,
+							"dataSource": "This:C1470.col17.key",
+							"footer": {
+								"name": "Footer4"
+							}
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "Header3"
+							},
+							"name": "col18",
+							"width": 40,
+							"dataSource": "This:C1470.col18.key",
+							"footer": {
+								"name": "Footer3"
+							}
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "Header2"
+							},
+							"name": "col19",
+							"width": 40,
+							"dataSource": "This:C1470.col19.key",
+							"footer": {
+								"name": "Footer2"
+							}
+						}
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 590,
+					"left": 90,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Firstname:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 630,
+					"left": 90,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Lastname:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 670,
+					"left": 90,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Gender:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 710,
+					"left": 40,
+					"width": 150,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Children:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 550,
+					"left": 90,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "ID:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"CacheAttString1": {
+					"type": "input",
+					"top": 590,
+					"left": 210,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.hover.firstname",
+					"stroke": "#DC143C",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"CacheAttString2": {
+					"type": "input",
+					"top": 630,
+					"left": 210,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.hover.lastname",
+					"stroke": "#1E90FF",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"CacheAttLong2": {
+					"type": "input",
+					"top": 710,
+					"left": 210,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.hover.children",
+					"stroke": "#1E90FF",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"CacheAttLong1": {
+					"type": "input",
+					"top": 670,
+					"left": 210,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.hover.gender",
+					"stroke": "#DC143C",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 550,
+					"left": 210,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Form:C1466.hover.key",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"CacheInfoSize": {
+					"type": "input",
+					"top": 470,
+					"left": 770,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.numberOfRecords",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 30,
+					"left": 40,
+					"width": 140,
+					"height": 20,
+					"fontWeight": "normal",
+					"text": "ORDA cache content",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontStyle": "normal"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 470,
+					"left": 40,
+					"width": 500,
+					"height": 20,
+					"text": "This grid shows the primary keys of entities in the cache",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Sample1": {
+					"type": "input",
+					"top": 550,
+					"left": 490,
+					"width": 40,
+					"height": 30,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 550,
+					"left": 540,
+					"width": 350,
+					"height": 20,
+					"text": "Only the attributes related to context1 ",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Sample2": {
+					"type": "input",
+					"top": 590,
+					"left": 490,
+					"width": 40,
+					"height": 30,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 590,
+					"left": 540,
+					"width": 350,
+					"height": 20,
+					"text": "Only the attributes related to context2",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Sample3": {
+					"type": "input",
+					"top": 630,
+					"left": 490,
+					"width": 40,
+					"height": 30,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 630,
+					"left": 540,
+					"width": 400,
+					"height": 20,
+					"text": "Attributes related to both context1 and context2",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Sample4": {
+					"type": "input",
+					"top": 670,
+					"left": 490,
+					"width": 40,
+					"height": 30,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 670,
+					"left": 540,
+					"width": 350,
+					"height": 20,
+					"text": "Cache is expired",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontStyle": "normal"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 504,
+					"left": 40,
+					"width": 380,
+					"height": 20,
+					"fontStyle": "normal",
+					"text": "Hover on the cells to view the content",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "normal"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowMinHeight": 500,
+	"windowMaxHeight": 32767,
+	"windowMinWidth": 930,
+	"width": 950,
+	"height": 750
+}

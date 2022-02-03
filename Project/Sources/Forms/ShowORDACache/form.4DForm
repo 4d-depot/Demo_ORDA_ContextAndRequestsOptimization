@@ -1,0 +1,2072 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowMinHeight": 500,
+	"windowMaxHeight": 32767,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onGettingFocus",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "841pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 10,
+					"left": 10,
+					"width": 1070,
+					"height": 730,
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ViewData": {
+					"type": "button",
+					"top": 450,
+					"left": 60,
+					"width": 130,
+					"height": 40,
+					"text": "View Data",
+					"focusable": false,
+					"method": "ObjectMethods/ViewData.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Static Picture6": {
+					"type": "picture",
+					"top": 88,
+					"left": 668,
+					"width": 336,
+					"height": 603,
+					"picture": "Images/Static Picture6.tif",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 86,
+					"left": 60,
+					"width": 548,
+					"height": 320,
+					"picture": "Images/Static Picture2.tif",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Go1": {
+					"type": "button",
+					"top": 80,
+					"left": 690,
+					"width": 90,
+					"height": 40,
+					"text": "Run",
+					"focusable": false,
+					"method": "ObjectMethods/Go1.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "",
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"borderStyle": "none",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Go2": {
+					"type": "button",
+					"top": 180,
+					"left": 690,
+					"width": 90,
+					"height": 40,
+					"text": "Run",
+					"focusable": false,
+					"method": "ObjectMethods/Go2.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"QueryOnly": {
+					"type": "input",
+					"top": 80,
+					"left": 130,
+					"width": 550,
+					"height": 80,
+					"dataSource": "_TabLineCode{7}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed"
+				},
+				"QueryOnlyText": {
+					"type": "text",
+					"top": 80,
+					"left": 40,
+					"width": 180,
+					"height": 30,
+					"textAlign": "left",
+					"text": "Step 1",
+					"fontWeight": "normal",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingY": "fixed",
+					"sizingX": "fixed"
+				},
+				"LoopExecutedText": {
+					"type": "text",
+					"top": 180,
+					"left": 40,
+					"width": 180,
+					"height": 30,
+					"textAlign": "left",
+					"text": "Step 2",
+					"fontWeight": "normal",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingY": "fixed",
+					"sizingX": "fixed"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 310,
+					"left": 40,
+					"width": 400,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "Learned attributes of Form.selection",
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingX": "fixed",
+					"textAlign": "left"
+				},
+				"LearntAttributes": {
+					"type": "input",
+					"top": 310,
+					"left": 390,
+					"width": 400,
+					"height": 40,
+					"dataSource": "Form:C1466.learntAttributes",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [],
+					"sizingY": "fixed",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"sizingX": "fixed"
+				},
+				"ViewList": {
+					"type": "button",
+					"top": 230,
+					"left": 690,
+					"width": 180,
+					"height": 40,
+					"text": "View Form.list",
+					"focusable": false,
+					"method": "ObjectMethods/ViewList.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"LoopExecuted": {
+					"type": "input",
+					"top": 180,
+					"left": 130,
+					"width": 550,
+					"height": 100,
+					"dataSource": "_TabLineCode{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed"
+				},
+				"ViewCache": {
+					"type": "button",
+					"top": 370,
+					"left": 130,
+					"width": 130,
+					"height": 40,
+					"text": "View cache",
+					"focusable": false,
+					"method": "ObjectMethods/ViewCache.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"display": true,
+					"visibility": "visible"
+				},
+				"ViewLog": {
+					"type": "button",
+					"top": 370,
+					"left": 280,
+					"width": 130,
+					"height": 40,
+					"text": "View log",
+					"focusable": false,
+					"method": "ObjectMethods/ViewLog.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				}
+			}
+		},
+		{
+			"objects": {
+				"Go3": {
+					"type": "button",
+					"top": 120,
+					"left": 670,
+					"width": 90,
+					"height": 40,
+					"text": "Run",
+					"focusable": false,
+					"method": "ObjectMethods/Go3.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"QueryAndLoop1": {
+					"type": "input",
+					"top": 120,
+					"left": 40,
+					"width": 610,
+					"height": 300,
+					"dataSource": "_TabLineCode{11}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text50": {
+					"type": "text",
+					"top": 80,
+					"left": 40,
+					"width": 200,
+					"height": 20,
+					"textAlign": "left",
+					"text": "Code to execute",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"LearntAttributes2": {
+					"type": "input",
+					"top": 450,
+					"left": 400,
+					"width": 400,
+					"height": 40,
+					"dataSource": "Form:C1466.learntAttributes",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Plugin Area": {
+					"type": "plugin",
+					"top": 657,
+					"left": 411,
+					"width": 1,
+					"height": 1,
+					"events": [
+						"onPluginArea"
+					]
+				},
+				"ViewList2": {
+					"type": "button",
+					"top": 170,
+					"left": 670,
+					"width": 150,
+					"height": 40,
+					"text": "View Form.list",
+					"focusable": false,
+					"method": "ObjectMethods/ViewList2.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text12": {
+					"type": "text",
+					"top": 450,
+					"left": 40,
+					"width": 450,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "Learned attributes of Form.selection",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ViewCacheWithList": {
+					"type": "button",
+					"top": 510,
+					"left": 40,
+					"width": 130,
+					"height": 40,
+					"text": "View cache",
+					"focusable": false,
+					"method": "ObjectMethods/ViewCacheWithList.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ViewLog1": {
+					"type": "button",
+					"top": 510,
+					"left": 190,
+					"width": 130,
+					"height": 40,
+					"text": "View log",
+					"focusable": false,
+					"method": "ObjectMethods/ViewLog1.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				}
+			}
+		},
+		{
+			"objects": {
+				"RunWithContextQuery": {
+					"type": "button",
+					"top": 580,
+					"left": 700,
+					"width": 100,
+					"height": 40,
+					"text": "Run",
+					"focusable": false,
+					"method": "ObjectMethods/RunWithContextQuery.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"QueryAndLoop8": {
+					"type": "input",
+					"top": 390,
+					"left": 40,
+					"width": 760,
+					"height": 180,
+					"dataSource": "_TabLineCode{13}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"QueryAndLoop10": {
+					"type": "input",
+					"top": 80,
+					"left": 40,
+					"width": 620,
+					"height": 230,
+					"dataSource": "_TabLineCode{15}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RunWithContextAll": {
+					"type": "button",
+					"top": 320,
+					"left": 560,
+					"width": 100,
+					"height": 40,
+					"text": "Run",
+					"focusable": false,
+					"method": "ObjectMethods/RunWithContextAll.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 110,
+					"left": 680,
+					"width": 350,
+					"height": 40,
+					"dataSource": "Form:C1466.contextAAtt",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text30": {
+					"type": "text",
+					"top": 80,
+					"left": 680,
+					"width": 210,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "ContextA attributes",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ViewLog2": {
+					"type": "button",
+					"top": 640,
+					"left": 940,
+					"width": 130,
+					"height": 40,
+					"text": "View log",
+					"focusable": false,
+					"method": "ObjectMethods/ViewLog2.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListBoxPersons": {
+					"type": "listbox",
+					"top": 100,
+					"left": 40,
+					"width": 295,
+					"height": 191,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "30px",
+					"headerHeight": "41px",
+					"dataSource": "Form:C1466.persons",
+					"currentItemSource": "Form:C1466.currentPerson",
+					"currentItemPositionSource": "Form:C1466.currentPos",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxPersons.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.firstname",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Firstname"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.lastname",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Lastname"
+							},
+							"footer": {
+								"name": "Footer5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 400,
+					"left": 40,
+					"width": 430,
+					"height": 30,
+					"dataSource": "Form:C1466.contextLB_list",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 400,
+					"left": 510,
+					"width": 450,
+					"height": 30,
+					"dataSource": "Form:C1466.contextLB_detail",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Next": {
+					"type": "button",
+					"top": 590,
+					"left": 720,
+					"width": 120,
+					"height": 40,
+					"text": "Next",
+					"focusable": false,
+					"method": "ObjectMethods/Next.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"GetPersonQuery10": {
+					"type": "input",
+					"top": 300,
+					"left": 40,
+					"width": 150,
+					"height": 30,
+					"dataSource": "_TabLineCode{25}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": []
+				},
+				"GetPersonQuery11": {
+					"type": "input",
+					"top": 360,
+					"left": 40,
+					"width": 380,
+					"height": 30,
+					"dataSource": "_TabLineCode{26}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GetPersonQuery12": {
+					"type": "input",
+					"top": 360,
+					"left": 510,
+					"width": 480,
+					"height": 30,
+					"dataSource": "_TabLineCode{27}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GetPersonQuery13": {
+					"type": "input",
+					"top": 300,
+					"left": 510,
+					"width": 260,
+					"height": 30,
+					"dataSource": "_TabLineCode{38}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": []
+				},
+				"Previous": {
+					"type": "button",
+					"top": 500,
+					"left": 720,
+					"width": 120,
+					"height": 40,
+					"text": "Previous",
+					"focusable": false,
+					"method": "ObjectMethods/Previous.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text42": {
+					"type": "text",
+					"top": 80,
+					"left": 40,
+					"width": 300,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": "Select a record to view details",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 510,
+					"width": 330,
+					"height": 201,
+					"text": "Record details",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text22": {
+					"type": "text",
+					"top": 170,
+					"left": 520,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Firstname:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text24": {
+					"type": "text",
+					"top": 210,
+					"left": 520,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Lastname:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheAttString4": {
+					"type": "input",
+					"top": 170,
+					"left": 630,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.currentPerson.firstname",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"lastNameORDA1": {
+					"type": "input",
+					"top": 210,
+					"left": 630,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.currentPerson.lastname",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text25": {
+					"type": "text",
+					"top": 250,
+					"left": 520,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "City:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"lastNameORDA2": {
+					"type": "input",
+					"top": 250,
+					"left": 630,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.currentPerson.address.city",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text29": {
+					"type": "text",
+					"top": 130,
+					"left": 530,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": "ID:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheAttString6": {
+					"type": "input",
+					"top": 130,
+					"left": 630,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.currentPerson.ID",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ExplanationsListbox1": {
+					"type": "input",
+					"top": 460,
+					"left": 510,
+					"width": 550,
+					"height": 30,
+					"dataSource": "_TabLineCode{40}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ExplanationsListbox2": {
+					"type": "input",
+					"top": 550,
+					"left": 510,
+					"width": 550,
+					"height": 30,
+					"dataSource": "_TabLineCode{41}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxConfig": {
+					"type": "button",
+					"top": 470,
+					"left": 40,
+					"width": 370,
+					"height": 40,
+					"text": "See list box properties and object method",
+					"focusable": false,
+					"method": "ObjectMethods/ListBoxConfig.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ViewLog3": {
+					"type": "button",
+					"top": 650,
+					"left": 420,
+					"width": 130,
+					"height": 40,
+					"text": "View log",
+					"focusable": false,
+					"method": "ObjectMethods/ViewLog3.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Line1": {
+					"type": "line",
+					"top": 70,
+					"left": 480,
+					"height": 560,
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 110,
+					"left": 40,
+					"width": 265,
+					"height": 221,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "30px",
+					"headerHeight": "41px",
+					"dataSource": "Form:C1466.list1",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onLoad",
+						"onScroll"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.ID",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "ID"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.gender",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [],
+							"header": {
+								"name": "Header2",
+								"text": "Gender"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss"
+							},
+							"textAlign": "center"
+						},
+						{
+							"name": "Column19",
+							"dataSource": "This:C1470.firstname",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header59",
+								"text": "Firstname"
+							},
+							"footer": {
+								"name": "Footer59",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"RunQuery1": {
+					"type": "button",
+					"top": 380,
+					"left": 40,
+					"width": 110,
+					"height": 40,
+					"text": "Run query 1",
+					"focusable": false,
+					"method": "ObjectMethods/RunQuery1.4dm",
+					"events": [
+						"onClick"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"style": "flat"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 310,
+					"left": 310,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Form:C1466.list1.length",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context1Text": {
+					"type": "text",
+					"top": 580,
+					"left": 40,
+					"width": 250,
+					"height": 20,
+					"visibility": "hidden",
+					"stroke": "#DC143C",
+					"text": "Context1 learned attributes:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context1Att": {
+					"type": "input",
+					"top": 610,
+					"left": 40,
+					"width": 350,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.context1Att",
+					"stroke": "#DC143C",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "none",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"List Box8": {
+					"type": "listbox",
+					"top": 110,
+					"left": 560,
+					"width": 265,
+					"height": 221,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "30px",
+					"headerHeight": "41px",
+					"dataSource": "Form:C1466.list2",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/List Box8.4dm",
+					"events": [
+						"onLoad",
+						"onScroll"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"columns": [
+						{
+							"name": "Column13",
+							"dataSource": "This:C1470.ID",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header43",
+								"text": "ID"
+							},
+							"footer": {
+								"name": "Footer43",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "This:C1470.children",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header44",
+								"text": "Children"
+							},
+							"footer": {
+								"name": "Footer44",
+								"timeFormat": "hh_mm_ss"
+							},
+							"textAlign": "center"
+						},
+						{
+							"name": "Column21",
+							"dataSource": "This:C1470.lastname",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header61",
+								"text": "Lastname"
+							},
+							"footer": {
+								"name": "Footer61",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 310,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.list2.length",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context2Text": {
+					"type": "text",
+					"top": 580,
+					"left": 560,
+					"width": 250,
+					"height": 20,
+					"visibility": "hidden",
+					"stroke": "#1E90FF",
+					"text": "Context2 learned attributes:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context2Att": {
+					"type": "input",
+					"top": 610,
+					"left": 560,
+					"width": 350,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.context2Att",
+					"stroke": "#1E90FF",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "none",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Query2Content": {
+					"type": "input",
+					"top": 440,
+					"left": 560,
+					"width": 500,
+					"height": 110,
+					"dataSource": "_TabLineCode{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"RunQuery2": {
+					"type": "button",
+					"top": 380,
+					"left": 560,
+					"width": 110,
+					"height": 40,
+					"text": "Run query 2",
+					"focusable": false,
+					"method": "ObjectMethods/RunQuery2.4dm",
+					"events": [
+						"onClick"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"style": "flat"
+				},
+				"Query3": {
+					"type": "input",
+					"top": 110,
+					"left": 310,
+					"width": 200,
+					"height": 20,
+					"dataSource": "_TabLineCode{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Query4": {
+					"type": "input",
+					"top": 110,
+					"left": 830,
+					"width": 200,
+					"height": 20,
+					"dataSource": "_TabLineCode{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Query1Content1": {
+					"type": "input",
+					"top": 440,
+					"left": 40,
+					"width": 470,
+					"height": 110,
+					"dataSource": "_TabLineCode{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context1Timer": {
+					"type": "text",
+					"top": 340,
+					"left": 40,
+					"width": 300,
+					"height": 20,
+					"visibility": "hidden",
+					"text": "Time since query launch (seconds):",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context1TimerValue": {
+					"type": "input",
+					"top": 340,
+					"left": 340,
+					"width": 70,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.time1",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context2Timer": {
+					"type": "text",
+					"top": 340,
+					"left": 560,
+					"width": 300,
+					"height": 20,
+					"visibility": "hidden",
+					"text": "Time since query launch (seconds):",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Context2TimerValue": {
+					"type": "input",
+					"top": 340,
+					"left": 860,
+					"width": 70,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.time2",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text14": {
+					"type": "text",
+					"top": 80,
+					"left": 40,
+					"width": 300,
+					"height": 25,
+					"stroke": "#DC143C",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "With context1"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 80,
+					"left": 560,
+					"width": 300,
+					"height": 25,
+					"stroke": "#1E90FF",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "With context2"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 60,
+					"left": 530,
+					"height": 590,
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"ViewCacheWithColors": {
+					"type": "button",
+					"top": 670,
+					"left": 470,
+					"width": 130,
+					"height": 40,
+					"text": "View cache",
+					"focusable": false,
+					"method": "ObjectMethods/ViewCacheWithColors.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				}
+			}
+		},
+		{
+			"objects": {
+				"GetPerson": {
+					"type": "button",
+					"top": 80,
+					"left": 500,
+					"width": 120,
+					"height": 40,
+					"text": "Get person",
+					"focusable": false,
+					"method": "ObjectMethods/GetPerson.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"GetPersonQuery1": {
+					"type": "input",
+					"top": 80,
+					"left": 40,
+					"width": 450,
+					"height": 150,
+					"dataSource": "_TabLineCode{18}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text35": {
+					"type": "text",
+					"top": 330,
+					"left": 760,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "First name:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text36": {
+					"type": "text",
+					"top": 360,
+					"left": 760,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Last name:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text39": {
+					"type": "text",
+					"top": 300,
+					"left": 760,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "ID:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheAttString3": {
+					"type": "input",
+					"top": 330,
+					"left": 870,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.person.firstname",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"lastNameORDA": {
+					"type": "input",
+					"top": 360,
+					"left": 870,
+					"width": 200,
+					"height": 20,
+					"dataSource": "Form:C1466.person.lastname",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 300,
+					"left": 870,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Form:C1466.person.ID",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text40": {
+					"type": "text",
+					"top": 410,
+					"left": 760,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Zip code:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Text46": {
+					"type": "text",
+					"top": 440,
+					"left": 760,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": "City:",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheAttString5": {
+					"type": "input",
+					"top": 410,
+					"left": 870,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.person.address.zipCode",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"cityORDA": {
+					"type": "input",
+					"top": 440,
+					"left": 870,
+					"width": 180,
+					"height": 20,
+					"dataSource": "Form:C1466.person.address.city",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"UpdateClassic": {
+					"type": "button",
+					"top": 685,
+					"left": 40,
+					"width": 100,
+					"height": 40,
+					"text": "Update",
+					"focusable": false,
+					"method": "ObjectMethods/UpdateClassic.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheAttString7": {
+					"type": "input",
+					"top": 330,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Persons:3]firstname:7",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"lastNameClassic": {
+					"type": "input",
+					"top": 360,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Persons:3]lastname:3",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"PersonID": {
+					"type": "input",
+					"top": 300,
+					"left": 140,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[Persons:3]ID:1",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"CacheAttString9": {
+					"type": "input",
+					"top": 410,
+					"left": 140,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Address:4]zipCode:2",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"cityClassic": {
+					"type": "input",
+					"top": 440,
+					"left": 140,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Address:4]city:3",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"GetPersonQuery2": {
+					"type": "input",
+					"top": 330,
+					"left": 550,
+					"width": 200,
+					"height": 20,
+					"dataSource": "_TabLineCode{19}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"textAlign": "right"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 260,
+					"left": 870,
+					"width": 150,
+					"height": 25,
+					"stroke": "#DC143C",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "ORDA"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 260,
+					"left": 140,
+					"width": 150,
+					"height": 25,
+					"stroke": "#1E90FF",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Classic 4D"
+				},
+				"GetPersonQuery4": {
+					"type": "input",
+					"top": 410,
+					"left": 500,
+					"width": 250,
+					"height": 20,
+					"dataSource": "_TabLineCode{31}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"textAlign": "right"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 330,
+					"left": 35,
+					"width": 95,
+					"height": 20,
+					"textAlign": "right",
+					"text": "First name:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"right": 130
+				},
+				"Text54": {
+					"type": "text",
+					"top": 360,
+					"left": 35,
+					"width": 95,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Last name:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"right": 130
+				},
+				"Text55": {
+					"type": "text",
+					"top": 300,
+					"left": 45,
+					"width": 85,
+					"height": 20,
+					"textAlign": "right",
+					"text": "ID:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"right": 130
+				},
+				"Text57": {
+					"type": "text",
+					"top": 410,
+					"left": 35,
+					"width": 95,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Zip code:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"right": 130
+				},
+				"Text58": {
+					"type": "text",
+					"top": 440,
+					"left": 35,
+					"width": 95,
+					"height": 20,
+					"textAlign": "right",
+					"text": "City:",
+					"fontFamily": "Arial",
+					"fontSize": 18,
+					"right": 130
+				},
+				"ReloadPerson": {
+					"type": "button",
+					"top": 500,
+					"left": 840,
+					"width": 180,
+					"height": 40,
+					"text": "Reload person",
+					"focusable": false,
+					"method": "ObjectMethods/ReloadPerson.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ReloadAddress": {
+					"type": "button",
+					"top": 600,
+					"left": 890,
+					"width": 180,
+					"height": 40,
+					"text": "Reload address",
+					"focusable": false,
+					"method": "ObjectMethods/ReloadAddress.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"GetPersonQuery5": {
+					"type": "input",
+					"top": 500,
+					"left": 520,
+					"width": 300,
+					"height": 40,
+					"dataSource": "_TabLineCode{33}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GetPersonQuery6": {
+					"type": "input",
+					"top": 600,
+					"left": 520,
+					"width": 350,
+					"height": 40,
+					"dataSource": "_TabLineCode{35}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GetPersonQuery9": {
+					"type": "input",
+					"top": 500,
+					"left": 40,
+					"width": 420,
+					"height": 175,
+					"dataSource": "_TabLineCode{6}",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GetPersonTimer": {
+					"type": "text",
+					"top": 150,
+					"left": 500,
+					"width": 300,
+					"height": 20,
+					"visibility": "hidden",
+					"text": "Time since query launch (seconds):",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"GetPersonTimerValue": {
+					"type": "input",
+					"top": 150,
+					"left": 800,
+					"width": 70,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.time3",
+					"dataSourceTypeHint": "number",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"ViewCacheWithList3": {
+					"type": "button",
+					"top": 660,
+					"left": 520,
+					"width": 240,
+					"height": 40,
+					"text": "View cache and requests",
+					"focusable": false,
+					"method": "ObjectMethods/ViewCacheWithList3.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"style": "flat",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Line": {
+					"type": "line",
+					"top": 252,
+					"left": 40,
+					"width": 1021,
+					"height": 0,
+					"strokeDashArray": [
+						2,
+						6
+					],
+					"startPoint": "topLeft"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 410,
+					"left": 760,
+					"width": 0,
+					"height": 50,
+					"startPoint": "topLeft"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 310,
+					"left": 760,
+					"width": 0,
+					"height": 80,
+					"startPoint": "topLeft"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 260,
+					"left": 490,
+					"width": 0,
+					"height": 450,
+					"strokeDashArray": [
+						2,
+						6
+					],
+					"startPoint": "topLeft"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowMinWidth": 930,
+	"windowSizingY": "variable",
+	"width": 1090,
+	"height": 750
+}

@@ -1,0 +1,69 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 500,
+	"windowMinHeight": 500,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"HDIpicture2": {
+					"type": "picture",
+					"top": 20,
+					"left": 60,
+					"width": 525,
+					"height": 390,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/ListBox_Persons_Config.png"
+				},
+				"GetPersonQuery3": {
+					"type": "input",
+					"top": 430,
+					"left": 60,
+					"width": 590,
+					"height": 290,
+					"dataSource": "_TabLineCode{21}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"width": 700,
+	"height": 750
+}

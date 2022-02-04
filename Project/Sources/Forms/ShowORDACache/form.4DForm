@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowSizingX": "variable",
 	"windowMinHeight": 500,
@@ -1900,22 +1900,6 @@
 					"fontFamily": "Arial",
 					"fontSize": 18
 				},
-				"ReloadAddress": {
-					"type": "button",
-					"top": 600,
-					"left": 890,
-					"width": 180,
-					"height": 40,
-					"text": "Reload address",
-					"focusable": false,
-					"method": "ObjectMethods/ReloadAddress.4dm",
-					"events": [
-						"onClick"
-					],
-					"style": "flat",
-					"fontFamily": "Arial",
-					"fontSize": 18
-				},
 				"GetPersonQuery5": {
 					"type": "input",
 					"top": 500,
@@ -1923,23 +1907,6 @@
 					"width": 300,
 					"height": 40,
 					"dataSource": "_TabLineCode{33}",
-					"focusable": false,
-					"fill": "transparent",
-					"enterable": false,
-					"styledText": true,
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"GetPersonQuery6": {
-					"type": "input",
-					"top": 600,
-					"left": 520,
-					"width": 350,
-					"height": 40,
-					"dataSource": "_TabLineCode{35}",
 					"focusable": false,
 					"fill": "transparent",
 					"enterable": false,
@@ -2068,5 +2035,6 @@
 	"windowMinWidth": 930,
 	"windowSizingY": "variable",
 	"width": 1090,
-	"height": 750
+	"height": 750,
+	"geometryStamp": 1
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="Demo_Summit2020_ORDA_ContextAndRequestsOptimization" uuid="DEEA6026A5456E4C816E812D170EAF16" collation_locale="fr">
+<base name="Demo_ORDA_ContextAndRequestsOptimization" uuid="DEEA6026A5456E4C816E812D170EAF16" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="INFOS" uuid="40D88E98EF3C412EBE6FC3ED74373332" id="2">
 		<field name="ID" uuid="8DFF216099834E518D39E43CBEE93B69" type="4" unique="true" autosequence="true" not_null="true" id="1"/>

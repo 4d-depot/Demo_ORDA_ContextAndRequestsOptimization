@@ -1,0 +1,52 @@
+{
+	"forms": {
+		"ViewCacheWithColor": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewData": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewResponse": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewCollection": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewLog": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"HDI": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ShowORDACache": {
+			"timeStamp": "2022-02-03T16:38:16Z",
+			"destination": "detailScreen"
+		},
+		"ViewExplanations": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ListBoxConfig": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewCacheAndRequests": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewCache": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		},
+		"ViewCacheWithList": {
+			"timeStamp": "2022-02-03T16:34:30Z",
+			"destination": "detailScreen"
+		}
+	}
+}

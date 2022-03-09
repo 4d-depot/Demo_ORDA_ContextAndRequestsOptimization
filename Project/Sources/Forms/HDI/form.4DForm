@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
@@ -184,9 +184,9 @@
 					"height": 50,
 					"stroke": "#212121",
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 18,
-					"text": "• title •"
+					"text": "• title •",
+					"fontTheme": "normal"
 				},
 				"Text": {
 					"type": "text",
@@ -196,9 +196,9 @@
 					"height": 37,
 					"stroke": "#212121",
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 30,
-					"text": "ORDA C/S Requests"
+					"text": "ORDA C/S Requests",
+					"fontTheme": "normal"
 				},
 				"White90": {
 					"type": "picture",
@@ -233,5 +233,17 @@
 				}
 			}
 		}
-	]
+	],
+	"geometryStamp": 15,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

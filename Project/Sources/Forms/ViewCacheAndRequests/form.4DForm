@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -43,7 +43,7 @@
 					"movableRows": false,
 					"rowHeight": "40px",
 					"showHeaders": false,
-					"dataSource": "Form:C1466.cacheInfoPersons",
+					"dataSource": "Form:C1466.cacheInfo",
 					"metaSource": "colorAsExpired (\"_2\")",
 					"selectionMode": "none",
 					"scrollbarHorizontal": "hidden",

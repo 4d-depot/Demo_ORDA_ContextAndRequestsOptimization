@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="21">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="22">
 	<com.4d>
 		<deployment>
 			<options/>
@@ -19,5 +19,8 @@
 				<options publication_name="ORDARequestsAndCache"/>
 			</network>
 		</server>
+		<compiler>
+			<options compilation_path="3"/>
+		</compiler>
 	</com.4d>
 </preferences>

@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowSizingX": "variable",
 	"markerHeader": 15,
@@ -69,5 +69,6 @@
 		"kind": "form"
 	},
 	"rightMargin": 19,
-	"bottomMargin": 20
+	"bottomMargin": 20,
+	"method": "method.4dm"
 }

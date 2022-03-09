@@ -1,16 +1,21 @@
 //%attributes = {"invisible":true}
-$0:=New object:C1471
-$0.cell:=New object:C1471
-C_OBJECT:C1216($paint;$0;$data)
-C_TEXT:C284($cell)
 
-For each ($cell;This:C1470)
+
+#DECLARE()->$result : Object
+
+var $paint; $data : Object
+var $cell : Text
+
+$result:=New object:C1471
+$result.cell:=New object:C1471
+
+
+For each ($cell; This:C1470)
 	$data:=This:C1470[$cell].data
 	If ($data#Null:C1517)
 		If (This:C1470[$cell].expired)
 			$paint:=Form:C1466.expiredColor
 		Else 
-			
 			If ($data.firstname=Null:C1517)
 				If ($data.lastname#Null:C1517)
 					$paint:=Form:C1466.context2Color
@@ -27,11 +32,10 @@ For each ($cell;This:C1470)
 		End if 
 		
 		If ($paint#Null:C1517)
-			$0.cell[$cell]:=$paint
+			$result.cell[$cell]:=$paint
 		End if 
-		
 	End if 
-	
-	
 End for each 
+
+
 

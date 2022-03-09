@@ -1,9 +1,6 @@
 
-C_OBJECT:C1216($e)
-C_TEXT:C284($text)
-
-C_LONGINT:C283($position)
-C_TEXT:C284($dataClass)
+var $e : cs:C1710.PersonsEntity
+var $text : Text
 
 
 Form:C1466.persons:=Form:C1466.ds.Persons.query("age >= 20"; Form:C1466.contextA)
@@ -20,6 +17,3 @@ End if
 
 refreshLog
 
-$position:=Position:C15(" dataclass"; _dataClassList{_dataClassList})
-$dataClass:=Substring:C12(_dataClassList{_dataClassList}; 1; $position-1)
-displayCache(20; $dataClass)

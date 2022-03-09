@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -539,7 +539,7 @@
 					"left": 210,
 					"width": 80,
 					"height": 20,
-					"dataSource": "Form:C1466.hover.key",
+					"dataSource": "Form:C1466.hover.__KEY",
 					"focusable": false,
 					"fill": "transparent",
 					"enterable": false,

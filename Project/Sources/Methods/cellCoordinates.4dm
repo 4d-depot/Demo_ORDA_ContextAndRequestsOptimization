@@ -1,17 +1,11 @@
 //%attributes = {"invisible":true}
 
 
-C_REAL:C285($1;$x;$2;$y)
-C_LONGINT:C283($column;$row)
-C_OBJECT:C1216($0;$result)
+#DECLARE($x : Real; $y : Real)->$result : Object
 
-$x:=$1
-$y:=$2
+var $column; $row : Integer
 
 $result:=New object:C1471
-
-$x:=$x
-$y:=$y
 
 $quotient:=$x\40
 $remainder:=$x%40
@@ -29,8 +23,6 @@ If ($remainder>=0)
 	$row:=$row+1
 End if 
 
-
 $result.column:=$column
 $result.row:=$row
 
-$0:=$result

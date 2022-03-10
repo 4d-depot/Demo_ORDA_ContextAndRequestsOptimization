@@ -4,6 +4,8 @@
 #DECLARE($x : Real; $y : Real)->$result : Object
 
 var $column; $row : Integer
+var $quotient : Real
+var $remainder : Real
 
 $result:=New object:C1471
 

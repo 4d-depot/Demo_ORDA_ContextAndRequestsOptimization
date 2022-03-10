@@ -143,14 +143,15 @@ Case of
 		Form:C1466.person:=Null:C1517
 		
 		If (FORM Get current page:C276=7)
-			importData
-			clearCache
 			Form:C1466.ds.startRequestLog(1000)
 			
 			UNLOAD RECORD:C212([Persons:3])
 			REDUCE SELECTION:C351([Persons:3]; 0)
 			UNLOAD RECORD:C212([Address:4])
 			REDUCE SELECTION:C351([Address:4]; 0)
+			
+			importData
+			clearCache
 			
 			OBJECT SET ENABLED:C1123(*; "GetPerson"; True:C214)
 			OBJECT SET ENABLED:C1123(*; "UpdateClassic"; False:C215)

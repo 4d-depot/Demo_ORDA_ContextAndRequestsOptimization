@@ -1,16 +1,7 @@
 [
 	{
 		"type": 66,
-		"formula": "$withURL"
-	},
-	{
-		"type": 66,
-		"formula": "Form:C1466.log",
-		"expanded": true
-	},
-	{
-		"type": 66,
-		"formula": "$entry",
+		"formula": "ds:C1482.Persons.all()",
 		"expanded": true
 	}
 ]

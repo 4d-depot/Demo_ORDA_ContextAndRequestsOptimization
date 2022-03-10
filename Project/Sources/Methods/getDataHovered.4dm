@@ -17,17 +17,19 @@ Case of
 		
 		Form:C1466.hover:=Null:C1517
 		
-		If (Form:C1466.cacheInfo.length#0)
-			
-			GET MOUSE:C468($x; $y; $z)
-			
-			$result:=cellCoordinates($x-$left; $y-$top)
-			
-			If ($result.row<=Form:C1466.cacheInfo.length)
-				$entry:=Form:C1466.cacheInfo[$result.row-1]["col"+String:C10($result.column-1)]
+		If (Form:C1466.cacheInfo#Null:C1517)
+			If (Form:C1466.cacheInfo.length#0)
 				
-				If ($entry#Null:C1517)
-					Form:C1466.hover:=$entry.data
+				GET MOUSE:C468($x; $y; $z)
+				
+				$result:=cellCoordinates($x-$left; $y-$top)
+				
+				If ($result.row<=Form:C1466.cacheInfo.length)
+					$entry:=Form:C1466.cacheInfo[$result.row-1]["col"+String:C10($result.column-1)]
+					
+					If ($entry#Null:C1517)
+						Form:C1466.hover:=$entry.data
+					End if 
 				End if 
 			End if 
 		End if 

@@ -1,20 +1,8 @@
 {
-	"Sources/Forms/ViewCacheWithColor/form.4DForm": {
-		"left": 347,
-		"top": 157,
+	"Sources/Forms/ShowORDACache/form.4DForm": {
+		"left": 193,
+		"top": 173,
 		"width": 1896,
-		"height": 1098
-	},
-	"Sources/Forms/ViewCache/form.4DForm": {
-		"left": 234,
-		"top": 129,
-		"width": 1896,
-		"height": 1098
-	},
-	"Sources/Forms/ViewCacheWithList/form.4DForm": {
-		"left": 234,
-		"top": 129,
-		"width": 1896,
-		"height": 1098
+		"height": 1072
 	}
 }

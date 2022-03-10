@@ -34,7 +34,8 @@
 					"action": "GotoPage",
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/Tab Control.4dm"
 				}
 			}
 		},
@@ -556,7 +557,8 @@
 					"scrollbarHorizontal": "automatic",
 					"method": "ObjectMethods/ListBoxPersons.4dm",
 					"events": [
-						"onSelectionChange"
+						"onSelectionChange",
+						"onScroll"
 					],
 					"fontFamily": "Arial",
 					"fontSize": 18,

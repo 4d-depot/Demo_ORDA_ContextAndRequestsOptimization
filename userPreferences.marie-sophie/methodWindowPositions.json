@@ -6,10 +6,10 @@
 		"height": 987
 	},
 	"Sources/Forms/ShowORDACache/method.4dm": {
-		"left": 193,
-		"top": 147,
+		"left": 0,
+		"top": 162,
 		"width": 1896,
-		"height": 1098
+		"height": 1072
 	},
 	"Sources/Forms/ShowORDACache/ObjectMethods/RunQuery1.4dm": {
 		"left": 138,
@@ -18,8 +18,8 @@
 		"height": 1098
 	},
 	"Sources/Forms/ShowORDACache/ObjectMethods/GetPerson.4dm": {
-		"left": 193,
-		"top": 173,
+		"left": 0,
+		"top": 162,
 		"width": 1896,
 		"height": 1072
 	},
@@ -72,10 +72,10 @@
 		"height": 1098
 	},
 	"Sources/Methods/displayCache.4dm": {
-		"left": 234,
-		"top": 129,
+		"left": 70,
+		"top": 168,
 		"width": 1896,
-		"height": 1098
+		"height": 1072
 	},
 	"Sources/Forms/ShowORDACache/ObjectMethods/ViewCacheWithList.4dm": {
 		"left": 138,
@@ -150,10 +150,10 @@
 		"height": 1098
 	},
 	"Sources/Forms/ShowORDACache/ObjectMethods/Go3.4dm": {
-		"left": 138,
-		"top": 157,
+		"left": 70,
+		"top": 168,
 		"width": 1896,
-		"height": 1098
+		"height": 1072
 	},
 	"Sources/Forms/ViewCacheWithList/method.4dm": {
 		"left": 138,
@@ -252,10 +252,10 @@
 		"height": 1098
 	},
 	"Sources/Forms/ShowORDACache/ObjectMethods/UpdateClassic.4dm": {
-		"left": 234,
-		"top": 129,
+		"left": 70,
+		"top": 168,
 		"width": 1896,
-		"height": 1098
+		"height": 1072
 	},
 	"Sources/Forms/ViewCacheAndRequests/ObjectMethods/List Box3.4dm": {
 		"left": 225,
@@ -318,10 +318,10 @@
 		"height": 1098
 	},
 	"Sources/Forms/ViewCacheWithList/ObjectMethods/Popup Dropdown List1.4dm": {
-		"left": 138,
-		"top": 157,
+		"left": 70,
+		"top": 168,
 		"width": 1896,
-		"height": 1098
+		"height": 1072
 	},
 	"Sources/Forms/ViewCollection/method.4dm": {
 		"left": 138,
@@ -354,10 +354,10 @@
 		"height": 1098
 	},
 	"Sources/Methods/computeBold.4dm": {
-		"left": 234,
-		"top": 129,
+		"left": 70,
+		"top": 168,
 		"width": 1896,
-		"height": 1098
+		"height": 1072
 	},
 	"Sources/Methods/setCacheTimeout.4dm": {
 		"left": 225,
@@ -406,5 +406,11 @@
 		"top": 200,
 		"width": 1896,
 		"height": 1124
+	},
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"left": 70,
+		"top": 168,
+		"width": 1896,
+		"height": 1072
 	}
 }

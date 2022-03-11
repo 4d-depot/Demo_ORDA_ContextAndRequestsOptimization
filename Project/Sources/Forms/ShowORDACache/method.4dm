@@ -52,9 +52,11 @@ Case of
 		Form:C1466.persons:=Form:C1466.ds.Persons.all()
 		
 		//Page 3 to view cache
-		ARRAY TEXT:C222(_dataClassList; 2)
-		_dataClassList{1}:="Persons dataclass"
-		_dataClassList{2}:="Address dataclass"
+		Form:C1466.dataClassList:=New object:C1471()
+		Form:C1466.dataClassList.values:=New collection:C1472()
+		Form:C1466.dataClassList.values.push("Persons dataclass")
+		Form:C1466.dataClassList.values.push("Address dataclass")
+		
 		
 		Form:C1466.context1Color:=New object:C1471("fill"; "#ff8080")  //Red - Context 1
 		Form:C1466.context2Color:=New object:C1471("fill"; "#99ccff")  //Blue - Context 2 
@@ -112,7 +114,8 @@ Case of
 		OBJECT SET ENABLED:C1123(*; "ViewList2"; False:C215)
 		
 		//Page 3
-		_dataClassList:=1
+		Form:C1466.dataClassList.currentValue:="Persons dataclass"
+		Form:C1466.dataClassList.index:=0
 		
 		//Page 4
 		Form:C1466.contextAAtt:=""

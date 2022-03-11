@@ -13,8 +13,8 @@ $result.cell:=New object:C1471
 
 For each ($cell; This:C1470)
 	$data:=This:C1470[$cell].data
-	$position:=Position:C15(" dataclass"; _dataClassList{_dataClassList})
-	$dataClass:=Substring:C12(_dataClassList{_dataClassList}; 1; $position-1)
+	$position:=Position:C15(" dataclass"; Form:C1466.dataClassList.currentValue)
+	$dataClass:=Substring:C12(Form:C1466.dataClassList.currentValue; 1; $position-1)
 	
 	Case of 
 		: (Current form name:C1298="ViewCache")

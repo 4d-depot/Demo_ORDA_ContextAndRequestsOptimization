@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -447,14 +447,15 @@
 					"left": 340,
 					"width": 250,
 					"height": 18,
-					"dataSource": "_dataClassList",
+					"dataSource": "Form:C1466.dataClassList",
 					"focusable": false,
 					"method": "ObjectMethods/Popup Dropdown List1.4dm",
 					"events": [
 						"onDataChange"
 					],
 					"fontFamily": "Arial",
-					"fontSize": 18
+					"fontSize": 18,
+					"dataSourceTypeHint": "object"
 				}
 			}
 		}

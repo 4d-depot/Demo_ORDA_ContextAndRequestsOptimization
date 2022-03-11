@@ -23,8 +23,9 @@ Form:C1466.ds.stopRequestLog()
 
 refreshLog
 
-$position:=Position:C15(" dataclass"; _dataClassList{_dataClassList})
-$dataClass:=Substring:C12(_dataClassList{_dataClassList}; 1; $position-1)
+$position:=Position:C15(" dataclass"; Form:C1466.dataClassList.currentValue)
+$dataClass:=Substring:C12(Form:C1466.dataClassList.currentValue; 1; $position-1)
+
 displayCache(20; $dataClass)
 
 Form:C1466.learntAttributes:=Choose:C955(Form:C1466.selection.getRemoteContextAttributes()#""; Form:C1466.selection.getRemoteContextAttributes(); "No learnt attributes at the moment")

@@ -31,7 +31,7 @@ Case of
 		$options.title:="Optimization and cache demo"
 		$options.blog:="blog.4d.com"
 		$options.info:="ORDA vs C/S ans REST server"
-		$options.minimumVersion:="1800"  // 1650 means 16R5   1601 means 16.1 (do not use !)
+		$options.minimumVersion:="1950"  // 1650 means 16R5   1601 means 16.1 (do not use !)
 		$options.license:=Null:C1517  // NO LICENSE NEEDED
 		DIALOG:C40("HDI"; $options)
 		CLOSE WINDOW:C154

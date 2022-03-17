@@ -1,9 +1,9 @@
 {
 	"Sources/Methods/00_Start.4dm": {
-		"left": 398,
-		"top": 389,
+		"left": 0,
+		"top": 162,
 		"width": 1896,
-		"height": 987
+		"height": 1072
 	},
 	"Sources/Forms/ShowORDACache/method.4dm": {
 		"left": 0,
@@ -252,8 +252,8 @@
 		"height": 1098
 	},
 	"Sources/Forms/ShowORDACache/ObjectMethods/UpdateClassic.4dm": {
-		"left": 70,
-		"top": 168,
+		"left": 0,
+		"top": 162,
 		"width": 1896,
 		"height": 1072
 	},

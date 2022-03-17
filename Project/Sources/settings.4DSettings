@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="22">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="23">
 	<com.4d>
 		<deployment>
 			<options/>
@@ -10,7 +10,7 @@
 				<log format="0" tokens=""/>
 			</standalone_server>
 		</web>
-		<general startup_environnement="0"/>
+		<general component_classStore_name="" startup_environnement="1"/>
 		<interface>
 			<user splash_screen="false"/>
 		</interface>
